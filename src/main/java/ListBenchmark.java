@@ -1,4 +1,3 @@
-import org.junit.Test;
 import me.geso.nanobench.Benchmark;
 import java.util.List;
 import java.util.ArrayList;
@@ -6,8 +5,7 @@ import java.util.LinkedList;
 
 public class ListBenchmark {
 
-  @Test
-  public void bench() throws Exception {
+  public static void main(String[] args) throws Exception {
     new Benchmark(new ListBenchmarkInner()).warmup(10).runByTime(3).timethese().cmpthese();
   }
 
